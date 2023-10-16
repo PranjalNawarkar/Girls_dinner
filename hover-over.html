@@ -24,7 +24,7 @@
       flex-wrap: wrap;
     }
 
-    .image-container {
+    .image-container1 {
       position: relative;
       justify-content: center;
       margin: 10px;
@@ -32,12 +32,42 @@
       height: 300px; 
     }
 
-    .image-container img {
+    .image-container1 img {
       max-width: 100%;
       height: auto;
       box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.1);
-     
     }
+
+    .image-container1:hover .overlay {
+      opacity: .92;
+    }
+
+    .image-container1:hover img {
+      box-shadow: 15px 15px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .image-container2 {
+      position: relative;
+      justify-content: center;
+      margin: 10px;
+      width: 620px; 
+      height: 300px; 
+    }
+
+    .image-container2 img {
+      max-width: 100%;
+      height: auto;
+      box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.1);
+    }
+
+    .image-container2:hover .overlay {
+      opacity: .92;
+    }
+
+    .image-container2:hover img {
+      box-shadow: 15px 15px 16px rgba(0, 0, 0, 0.2);
+    }
+
     .overlay {
       position: absolute;
       top: 50%;
@@ -45,23 +75,15 @@
       transform: translate(-50%, -50%);
       width: 90%; 
       height: 90%; 
-      background: rgba(0, 0, 0, 0.5);
+      background: #CF85A6;
       opacity: 0;
-      transition: opacity 0.3s;
+      transition: opacity 0s;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       text-align: center;
-      color: #fff;
-    }
-
-    .image-container:hover .overlay {
-      opacity: 1;
-    }
-
-    .image-container:hover img {
-      box-shadow: 15px 15px 16px rgba(0, 0, 0, 0.2);
+      color: rgb(3, 3, 3);
     }
 
   </style>
@@ -72,21 +94,21 @@
 
     <div class="flexbox-container">
 
-      <div class="image-container">
+      <div class="image-container1">
         <img src="Food-pic-1.jpg" alt="Image 1">
             <div class="overlay">
-              <h2>Recipe 1 Name</h2>
+              <h2>RECIPE1</h2>
               <p>Description or additional text.</p>
-              <button type="button">View Recipe</button>
+              <a href="https://www.google.com/" style="color: white;">GO TO RECIPE</a>
             </div> 
       </div>
 
-      <div class="image-container">
-        <img src="Food-pic-1.jpg" alt="Image 2">
+      <div class="image-container2">
+        <img src="Food-pic-2.jpg" alt="Image 2">
           <div class="overlay">
-            <h2>Recipe 2 Name</h2>
+            <h2>RECIPE2</h2>
             <p>Description or additional text.</p>
-            <button type="button">View Recipe</button>
+            <a href="https://www.google.com/" style="color: white;">GO TO RECIPE</a>
           </div>
       </div>
 
@@ -94,21 +116,30 @@
 
     <div class="flexbox-container">
 
-      <div class="image-container">
+      <div class="image-container1">
         <img src="Food-pic-1.jpg" alt="Image 3">
             <div class="overlay">
-              <h2>Recipe 3 Name</h2>
+              <h2>RECIPE3</h2>
               <p>Description or additional text.</p>
-              <button type="button">View Recipe</button>
+              <a href="https://www.google.com/" style="color: white;">GO TO RECIPE</a>
             </div> 
       </div>
 
-      <div class="image-container">
+      <div class="image-container1">
         <img src="Food-pic-1.jpg" alt="Image 4">
           <div class="overlay">
-            <h2>Recipe 4 Name</h2>
+            <h2>RECIPE4</h2>
             <p>Description or additional text.</p>
-            <button type="button">View Recipe</button>
+            <a href="https://www.google.com/" style="color: white;">GO TO RECIPE</a>
+          </div>
+      </div>
+
+      <div class="image-container1">
+        <img src="Food-pic-1.jpg" alt="Image 5">
+          <div class="overlay">
+            <h2>RECIPE5</h2>
+            <p>Description or additional text.</p>
+            <a href="https://www.google.com/" style="color: white;">GO TO RECIPE</a>
           </div>
       </div>
 
