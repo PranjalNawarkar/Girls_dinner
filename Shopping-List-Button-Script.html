@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Shopping List for the Adult Lunchable</title>
+</head>
+<body>
+    <button id="contactButton">Get The Shopping List</button>     
+               
+    <script>
+        function openEmailClient() {
+            var subject = "Shopping List For Recipe #1: Adult Lunchable";
+            var body = "Ingredients List: \n\n" +
+                       "- Fancy Cheeses, like gouda, manchego, brie, etc.\n" +
+                       "- Meats, like proscuitto, salami, smoked meats, and some people even like tinned fish like sardines! \n" +
+                       "- Dips, like hummus or spichach artichoke dip\n" +
+                       "- Fruit, like sliced apples or strawberries\n" +
+                       "- Something Crunchy, like chips, pretzels, or nuts\n" +
+                       "- Pickles...or some other slightly vinegary item to add a little sour flavor to the mix \n" +
+                       "- Whatever else your heart desires" +
+                       "The imporant thing to remember about Girl Dinner is that it's whatever you want it to be!";
+            var mailtoLink = "mailto:?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+            window.location.href = mailtoLink;
+        }
+        document.getElementById("contactButton").addEventListener("click", openEmailClient);
+    </script>
+</body>
+</html>
