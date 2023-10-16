@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+
+  <!--page-set-up-->
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+  <title>Hover-over-test-file></title>
+  </head>
+  
+  <!--style-neede-for-hover-over-and-flexbox-->
+
+  <style>
+    body {
+      height: 100vh;
+      margin: 0;
+    }
+
+    .flexbox-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .image-container {
+      position: relative;
+      justify-content: center;
+      margin: 10px;
+      width: 300px; 
+      height: 300px; 
+    }
+
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+      box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.1);
+     
+    }
+    .overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 90%; 
+      height: 90%; 
+      background: rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      transition: opacity 0.3s;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+    }
+
+    .image-container:hover .overlay {
+      opacity: 1;
+    }
+
+    .image-container:hover img {
+      box-shadow: 15px 15px 16px rgba(0, 0, 0, 0.2);
+    }
+
+  </style>
+
+  <!--html-hover-over-flexbox-->
+
+  <body>
+
+    <div class="flexbox-container">
+
+      <div class="image-container">
+        <img src="Food-pic-1.jpg" alt="Image 1">
+            <div class="overlay">
+              <h2>Recipe 1 Name</h2>
+              <p>Description or additional text.</p>
+              <button type="button">View Recipe</button>
+            </div> 
+      </div>
+
+      <div class="image-container">
+        <img src="Food-pic-1.jpg" alt="Image 2">
+          <div class="overlay">
+            <h2>Recipe 2 Name</h2>
+            <p>Description or additional text.</p>
+            <button type="button">View Recipe</button>
+          </div>
+      </div>
+
+    </div>
+
+    <div class="flexbox-container">
+
+      <div class="image-container">
+        <img src="Food-pic-1.jpg" alt="Image 3">
+            <div class="overlay">
+              <h2>Recipe 3 Name</h2>
+              <p>Description or additional text.</p>
+              <button type="button">View Recipe</button>
+            </div> 
+      </div>
+
+      <div class="image-container">
+        <img src="Food-pic-1.jpg" alt="Image 4">
+          <div class="overlay">
+            <h2>Recipe 4 Name</h2>
+            <p>Description or additional text.</p>
+            <button type="button">View Recipe</button>
+          </div>
+      </div>
+
+    </div>
+
+  </body>
+</html>
