@@ -6,7 +6,7 @@
     <title>Email Shopping List for the Adult Lunchable</title>
 </head>
 <body>
-    <button id="contactButton">Get The Shopping List</button>     
+    <button id="contactButton">Get The Shopping List for Adult Lunchable</button>     
                
     <script>
         function openEmailClient() {
@@ -19,7 +19,7 @@
                        "- Something Crunchy, like chips, pretzels, or nuts\n" +
                        "- Pickles...or some other slightly vinegary item to add a little sour flavor to the mix \n" +
                        "- Whatever else your heart desires" +
-                       "The imporant thing to remember about Girl Dinner is that it's whatever you want it to be!";
+                       "- The imporant thing to remember about Girl Dinner is that it's whatever you want it to be!";
             var mailtoLink = "mailto:?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
             window.location.href = mailtoLink;
         }
