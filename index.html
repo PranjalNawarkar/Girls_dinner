@@ -164,7 +164,7 @@
         <button id="contactButton">Get The Shopping List</button>    
 
 </div>
-</body>
+
 
 
   <!--JS-->
@@ -228,9 +228,30 @@
       document.body.appendChild(css);
     };
 
+//Added selected class on navbar
+  const recipeLinks = document.querySelectorAll('.nav-link');
+
+  recipeLinks.forEach((link) => {
+    link.addEventListener('click', function () {
+       
+        recipeLinks.forEach((link) => {
+            link.classList.remove('selected');
+        });
+       
+        this.classList.add('selected');
+    });
+  });
+
+
+
   </script>
-</html>
+
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+  
+
