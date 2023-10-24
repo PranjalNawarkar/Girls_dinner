@@ -5,7 +5,7 @@
 
 1 - I brought over a copy of Pranjal's css to make sure formatting was correct for this page.
 2 - Nav Bar is a copy of index.html.  If that changes, please update here also.
-3 - I did not add Sierra's code so the shopping list button does not work yet
+3 - I added Sierra's code so the shopping list button worksand text will need to be updated for other recipes
 
 -->
 
@@ -83,7 +83,7 @@
                     <li>¼ cup water, or as needed to blend</li>
                     <li>Veggies and/or warm pita bread, for serving</li>  
                     <br>
-                    <button id="contactButton;">Get The Shopping List</button>   
+                    <button id="contactButton">Get The Shopping List</button>   
                 </span>
             </div>
         </div>
@@ -100,5 +100,24 @@
         <br>
 
     </body>
+
+    <!--Javascript-->
+
+    <script>
+        function openEmailClient() {
+            var subject = "Shopping List For Recipe #3: Hummus";
+            var body = "Ingredients List: \n\n" +
+                "- 1 (one) 15 ounce can chickpeas, drained and rinsed\n" +
+                "- ⅓ cup tahini\n" +
+                "- extra-virgin olive oil\n" +
+                "- lemon juice\n" +
+                "- garlic powder\n" +
+                "- sea salt\n" +
+                "- Veggies and/or warm pita bread, for serving";
+            var mailtoLink = "mailto:?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+            window.location.href = mailtoLink;
+        }
+        document.getElementById("contactButton").addEventListener("click", openEmailClient);
+    </script>
 
 </html>
