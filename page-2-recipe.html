@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+
+<!--PLEASE READ:
+    1 - I brought over a copy of Pranjal's css to make sure formatting was correct for this page.
+    2 - Nav Bar is a copy of index.html.  If that changes, please update here also.
+    3 - I added Sierra's code so the shopping list button worksand text will need to be updated for other recipes-->
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Girl Dinner - Recipe 1: Drink</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://kit.fontawesome.com/c92bfa29e2.js" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="girl-dinner.css">
+        <script src="girl-dinner.js"></script> 
+    </head>
+
+    <body class="body">
+
+        <!--navbar-->
+
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+
+            <div class="container-fluid">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="navbar-brand" href="homepage.html">Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-brand" href="page-2-recipe.html">Drink</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-brand" href="page-3-recipe.html">Appetizer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-brand" href="page-4-recipe.html">Snack</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-brand" href="page-5-recipe.html">Dessert</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-brand" href="page-6-recipe.html">More Dessert</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-brand" href="page-7-about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="b-example-divider"></div>
+
+        <!--recipe-image-and-main-script-and-shopping-button-->
+
+        <div class="flexbox-container" style="padding-top: 50px;">
+            <div class="image-container">
+                <img src="pictures/Food-pic-1-drink.jpg" alt="Drink">
+            </div>
+            
+            <div class="text-box button-box">
+                <span style="align-items: center;">
+                    <span style="text-align: center;">
+                        <br>
+                        <h2>Drink: Blended Sangria Margarita</h2>
+                        <h6>Cheers to more fruit in your diet</h6>
+                        <br>
+                    </span> 
+                    <h6 style="font-weight: bold;">SANGRIA INGREDIENTS:</h6>
+                    <li>Dry red wine</li>  
+                    <li>Frozen berries</li>  
+                    <li>Sweetener (I support Canada and their maple syrup)</li>  
+                    <li>Orange juice (if that’s yo thang, it sweetens nicely) </li>
+                    <li>Triple sec (to your heart’s desire, I add the alcohol when I make the margarita!) </li>   
+                    <li>Sometimes ice, depending on your preferred crunch level in a slush </li>  
+                    <br>
+                    <h6 style="font-weight: bold;">MARGARITA INGREDIENTS:</h6>
+                    <li>Tequila (as much to your heart’s content)</li>  
+                    <li>Lime juice (i like enough to make my lips pucker from the dry red and lime together)</li>  
+                    <li>Ice</li>  
+                    <li>Triple sec (remember how I talked about adding more alcohol before?) </li>  
+                    <li>People say agave, my first love is maple syrup, and thus that is what I add </li>  
+                    <br>
+                    <button id="contactButton">Get The Shopping List</button>   
+                </span>
+            </div>
+        </div>
+
+        <!--Directions-text-box-->
+
+        <div class="text-box button-box">
+            <section id="recipe1">
+                <h6 style="font-weight: bold;">DIRECTIONS:</h6>
+                <p>Now, no hate if you never make it to the second part of the recipe. I actually will make the margarita first, pour it in my glasses so the white slush is in the bottom half, then reuse the blender for the sangria to later pour on top of the glass. Pretty, aesthetic, tipsy… </p>
+            </section>
+        </div>
+        <br>
+
+    </body>
+
+    <!--Javascript-->
+
+    <script>
+        function openEmailClient() {
+            var subject = "Shopping List For Recipe #1: Blended Sangria Margarita";
+            var body = "Ingredients List: \n\n" +
+            "- Dry red wine\n" +  
+            "- Frozen berries (it makes it so much darker and prettier, but if you want a pink color, then fine, I will accept frozen mangos or peaches)\n" +  
+            "- Sweetener (I support Canada and their maple syrup)\n" +  
+            "- Orange juice (if that’s yo thang, it sweetens nicely) \n" +
+            "- Triple sec (to your heart’s desire, I add the alcohol when I make the margarita!) \n" +   
+            "- Sometimes ice, depending on your preferred crunch level in a slush \n" +  
+            "- Tequila (as much to your heart’s content)\n" +  
+            "- Lime juice (i like enough to make my lips pucker from the dry red and lime together)\n" +  
+            "- Ice\n" +  
+            "- Triple sec (remember how I talked about adding more alcohol before?) \n" +  
+            "- People say agave, my first love is maple syrup, and thus that is what I add";
+
+            var mailtoLink = "mailto:?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+            window.location.href = mailtoLink;
+        }
+        document.getElementById("contactButton").addEventListener("click", openEmailClient);
+    </script>
+
+</html>
