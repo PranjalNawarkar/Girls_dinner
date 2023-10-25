@@ -1,4 +1,4 @@
-/* styling for page 7 */
+/* styling for page 7 and all */
 body {
     background-color:#91355E;
     display: flex;
@@ -63,4 +63,79 @@ body {
     border-radius: 10px;
     font-family: Tahoma, sans-serif;
     color: rgb(230, 209, 226);
+}
+
+/* styling for page 1 and all */
+
+.flexbox-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.image-container1 {
+  position: relative;
+  justify-content: center;
+  margin: 10px;
+  width: 300px; 
+  height: 300px; 
+}
+
+.image-container1 img {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.1);
+}
+
+.image-container1:hover .overlay {
+  opacity: .92;
+}
+
+.image-container1:hover img {
+  box-shadow: 15px 15px 16px rgba(0, 0, 0, 0.2);
+}
+
+.image-container2 {
+  position: relative;
+  justify-content: center;
+  margin: 10px;
+  width: 620px; 
+  height: 300px; 
+}
+
+.image-container2 img {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.1);
+}
+
+.image-container2:hover .overlay {
+  opacity: .92;
+}
+
+.image-container2:hover img {
+  box-shadow: 15px 15px 16px rgba(0, 0, 0, 0.2);
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%; 
+  height: 90%; 
+  background: #CF85A6;
+  opacity: 0;
+  transition: opacity 0s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: rgb(3, 3, 3);
+}
+
+h5 {
+text-align: center;
+font-size: 30px;
 }

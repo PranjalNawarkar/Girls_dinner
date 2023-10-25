@@ -1,11 +1,6 @@
 <!doctype html>
 <html lang="en">
 
-<!--PLEASE READ:
-    1 - I brought over a copy of Pranjal's css to make sure formatting was correct for this page.
-    2 - Nav Bar is a copy of index.html.  If that changes, please update here also.
-    3 - I added Sierra's code so the shopping list button worksand text will need to be updated for other recipes-->
-
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -65,7 +60,7 @@
                     <span style="text-align: center;">
                         <br>
                         <h2>Dessert: S'Mores</h2>
-                        <h6>I want more :)</h6>
+                        <h6>I want more :</h6>
                         <br>
                     </span> 
                     <h6 style="font-weight: bold;">INGREDIENTS:</h6>
@@ -73,7 +68,7 @@
                     <li>Mini marshmallows</li>   
                     <li>Chocolate chips</li>  
                     <br>
-                    <button id="contactButton">Get The Shopping List</button>   
+                    <!--<button id="contactButtonSMores">Get The Shopping List for Microwave S'mores</button>-->       
                 </span>
             </div>
         </div>
@@ -91,19 +86,5 @@
 
     </body>
 
-    <!--Javascript-->
-
-    <script>
-        function openEmailClient() {
-            var subject = "Shopping List For Recipe #4: S'Mores";
-            var body = "Ingredients List: \n\n" +
-            "- Graham crackers\n" +  
-            "- Mini marshmallows\n" +   
-            "- Chocolate chips";
-            var mailtoLink = "mailto:?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
-            window.location.href = mailtoLink;
-        }
-        document.getElementById("contactButton").addEventListener("click", openEmailClient);
-    </script>
 
 </html>

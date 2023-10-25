@@ -17,8 +17,6 @@ document.getElementById("contactButtonLunch").addEventListener("click", openEmai
 
 
 //email shopping list sooner swirl
-<button id="contactButtonSwirl">Get The Shopping List for Sooner Swirl</button>       
-
 function openEmailClientSwirl() {
   var subject = "Shopping List For Recipe: Sooner Swirl";
   var body = "Ingredients List: \n\n" +
@@ -42,7 +40,6 @@ document.getElementById("contactButtonSwirl").addEventListener("click", openEmai
 
 
 //email shopping list tres leches
-<button id="contactButtonTres">Get The Shopping List for Tres Leches</button>       
 
 function openEmailClientTres() {
   var subject = "Shopping List For Recipe: Tres Leches";
@@ -66,7 +63,6 @@ document.getElementById("contactButtonTres").addEventListener("click", openEmail
 
 
 //email shopping list hummus
-<button id="contactButtonHummus">Get The Shopping List for Hummus</button>       
 
 function openEmailClientHummus() {
   var subject = "Shopping List For Recipe: Hummus";
@@ -86,7 +82,6 @@ document.getElementById("contactButtonHummus").addEventListener("click", openEma
 
 
 //email shopping list smores
-<button id="contactButtonSMores">Get The Shopping List for Microwave S'mores</button>       
 
 function openEmailClientSMores() {
   var subject = "Shopping List For Recipe: Microwave S'Mores";
