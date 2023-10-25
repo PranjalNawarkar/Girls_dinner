@@ -12,19 +12,6 @@ body {
   text-align: right;
 }
 
-  .navbar a {
-    color: #000; 
-    font-weight: bold;
-  }
-
- 
-.navbar a.selected {
-  background-color: white;
-  color: #fff; 
-  border-radius: 5px; 
-}
-
-
 /* Add spacing between the boxes */
 .box {
     margin: 10px;
