@@ -69,12 +69,12 @@
                         <br>
                     </span> 
                     <h6 style="font-weight: bold;">INGREDIENTS:</h6>
-                    <li>Dry red wine</li>  
-                    <li>Frozen berries (it makes it so much darker and prettier, but if you want a pink color, then fine, I will accept frozen mangos or peaches)</li>  
-                    <li>Sweetener (I support Canada and their maple syrup)</li>  
-                    <li>Orange juice (if that’s yo thang, it sweetens nicely) </li>
-                    <li>Triple sec (to your heart’s desire, I add the alcohol when I make the margarita!) </li>   
-                    <li>Sometimes ice, depending on your preferred crunch level in a slush </li>  
+                    <li>Fancy Cheeses, like gouda, manchego, brie, etc.</li>  
+                    <li>Meats, like proscuitto, salami, smoked meats, and some people even like tinned fish like sardines!</li>  
+                    <li>Dips, like hummus or spichach artichoke dip</li>  
+                    <li>Fruit, like sliced apples or strawberries</li>
+                    <li>Something Crunchy, like chips, pretzels, or nuts</li>   
+                    <li>Pickles...or some other slightly vinegary item to add a little sour flavor to the mix</li>  
                     <br>
                     <button id="contactButton">Get The Shopping List</button>   
                 </span>
@@ -86,7 +86,9 @@
         <div class="text-box button-box">
             <section id="recipe1">
                 <h6 style="font-weight: bold;">DIRECTIONS:</h6>
-                <p>This is an easy one!  Arrange all your ingredients on a serving platter and enjoy!</p>
+                <p>This is an easy one... Arrange all your ingredients on a serving platter and enjoy!</p>
+                <br>
+                <p>The imporant thing to remember about Girl Dinner is that it's whatever you want it to be!</p>
             </section>
         </div>
         <br>
@@ -97,20 +99,15 @@
 
     <script>
         function openEmailClient() {
-            var subject = "Shopping List For Recipe #1: Blended Sangria Margarita";
+            var subject = "Shopping List For Recipe #2: Adult Lunchable";
             var body = "Ingredients List: \n\n" +
-            "- Dry red wine\n" +  
-            "- Frozen berries (it makes it so much darker and prettier, but if you want a pink color, then fine, I will accept frozen mangos or peaches)\n" +  
-            "- Sweetener (I support Canada and their maple syrup)\n" +  
-            "- Orange juice (if that’s yo thang, it sweetens nicely) \n" +
-            "- Triple sec (to your heart’s desire, I add the alcohol when I make the margarita!) \n" +   
-            "- Sometimes ice, depending on your preferred crunch level in a slush \n" +  
-            "- Tequila (as much to your heart’s content)\n" +  
-            "- Lime juice (i like enough to make my lips pucker from the dry red and lime together)\n" +  
-            "- Ice\n" +  
-            "- Triple sec (remember how I talked about adding more alcohol before?) \n" +  
-            "- People say agave, my first love is maple syrup, and thus that is what I add";
-
+                "- Fancy Cheeses, like gouda, manchego, brie, etc.\n" +
+                "- Meats, like proscuitto, salami, smoked meats, and some people even like tinned fish like sardines! \n" +
+                "- Dips, like hummus or spichach artichoke dip\n" +
+                "- Fruit, like sliced apples or strawberries\n" +
+                "- Something Crunchy, like chips, pretzels, or nuts\n" +  
+                "- Pickles...or some other slightly vinegary item to add a little sour flavor to the mix \n" +                       "- Whatever else your heart desires" +
+                "- The imporant thing to remember about Girl Dinner is that it's whatever you want it to be!";
             var mailtoLink = "mailto:?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
             window.location.href = mailtoLink;
         }
