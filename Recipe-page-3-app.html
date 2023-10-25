@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+
+<!--PLEASE READ:
+    1 - I brought over a copy of Pranjal's css to make sure formatting was correct for this page.
+    2 - Nav Bar is a copy of index.html.  If that changes, please update here also.
+    3 - I added Sierra's code so the shopping list button worksand text will need to be updated for other recipes-->
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Girl Dinner - Recipe 3: Hummus</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://kit.fontawesome.com/c92bfa29e2.js" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="girl-dinner.css"> 
+    </head>
+
+    <body class="body">
+
+        <!--navbar-->
+
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#recipe1">Recipe 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#recipe2">Recipe 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#recipe3">Recipe 3</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#recipe4">Recipe 4</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#recipe5">Recipe 5</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#contactButton">Shopping List</a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <br>
+
+        <!--recipe-image-and-main-script-and-shopping-button-->
+
+        <div class="flexbox-container" style="padding-top: 50px;">
+            
+            <div class="image-container">
+                <img src="images/Food-pic-3-app.jpg" alt="Hummus">
+            </div>
+            
+            <div class="text-box button-box">
+                <span style="align-items: center;">
+                    <span style="text-align: center;">
+                        <br>
+                        <h2>Appetizer: Hummus</h2>
+                        <h6>Add garlic... to taste</h6>
+                        <br>
+                    </span> 
+                    <h6 style="font-weight: bold;">INGREDIENTS:</h6>
+                    <li>15 ounce can chickpeas, drained and rinsed</li>  
+                    <li>⅓ cup tahini</li>   
+                    <li>1½  tablespoons extra-virgin olive oil</li>  
+                    <li>1 tablespoon lemon juice, to taste</li>
+                    <li>¼ teaspoon garlic powder, to taste</li>
+                    <li>½ teaspoon sea salt</li>
+                    <li>¼ cup water, or as needed to blend</li>
+                    <li>Veggies and/or warm pita bread, for serving</li>  
+                    <br>
+                    <button id="contactButton">Get The Shopping List</button>   
+                </span>
+            </div>
+        </div>
+
+        <!--Directions-text-box-->
+
+        <div class="text-box button-box">
+            <section id="recipe1">
+                <h6 style="font-weight: bold;">DIRECTIONS:</h6>
+                <p>In a blender, place the chickpeas, tahini, olive oil, lemon juice, garlic powder, and salt. Use the blender baton to blend until very smooth, adding water as needed to blend, and/or to reach your desired consistency.</p>
+                <p>Transfer to a serving plate and serve with warm pita and veggies.</p>
+            </section>
+        </div>
+        <br>
+
+    </body>
+
+    <!--Javascript-->
+
+    <script>
+        function openEmailClient() {
+            var subject = "Shopping List For Recipe #3: Hummus";
+            var body = "Ingredients List: \n\n" +
+                "- 1 (one) 15 ounce can chickpeas, drained and rinsed\n" +
+                "- ⅓ cup tahini\n" +
+                "- extra-virgin olive oil\n" +
+                "- lemon juice\n" +
+                "- garlic powder\n" +
+                "- sea salt\n" +
+                "- Veggies and/or warm pita bread, for serving";
+            var mailtoLink = "mailto:?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+            window.location.href = mailtoLink;
+        }
+        document.getElementById("contactButton").addEventListener("click", openEmailClient);
+    </script>
+
+</html>

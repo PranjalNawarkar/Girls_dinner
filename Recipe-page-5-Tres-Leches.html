@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+
+<!--PLEASE READ:
+    1 - I brought over a copy of Pranjal's css to make sure formatting was correct for this page.
+    2 - Nav Bar is a copy of index.html.  If that changes, please update here also.
+    3 - I added Sierra's code so the shopping list button worksand text will need to be updated for other recipes-->
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Girl Dessert Dinner - Recipe 5: Tres Leches</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://kit.fontawesome.com/c92bfa29e2.js" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="girl-dinner.css"> 
+    </head>
+
+    <body class="body">
+
+        <!--navbar-->
+
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#recipe1">Recipe 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#recipe2">Recipe 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#recipe3">Recipe 3</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#recipe4">Recipe 4</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#recipe5">Recipe 5</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#contactButton">Shopping List</a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <br>
+
+        <!--recipe-image-and-main-script-and-shopping-button-->
+
+        <div class="flexbox-container" style="padding-top: 50px;">
+            <div class="image-container">
+                <img src="images/Food-pic-5-dessert.jpg" alt="Tres Leches">
+            </div>
+            
+            <div class="text-box button-box">
+                <span style="align-items: center;">
+                    <span style="text-align: center;">
+                        <br>
+                        <h2>Tres Leches</h2>
+                        <h6>Three's a Party!</h6>
+                        <br>
+                    </span> 
+                    <h6 style="font-weight: bold;">INGREDIENTS:</h6>
+                    <li>1 cup all-purpose flour</li> 
+                    <li>1 1/2 tsp baking powder</li> 
+                    <li>1/4 tsp salt</li>  
+                    <li>1/2 cup unsalted butter</li>  
+                    <li>1 cup granulated sugar</li>  
+                    <li>5 large eggs</li>  
+                    <li>1 tsp vanilla extract</li>  
+                    <li>12 oz evaporated milk</li> 
+                    <li>14 oz sweetened condensed milk</li> 
+                    <li>1 cup whole milk</li> 
+                    <li>2 cups whipped cream</li> 
+                    <li>Ground cinnamon or fresh fruit for garnish (optional)</li>   
+                    <br>
+                    <button id="contactButton">Get The Shopping List</button>   
+                </span>
+            </div>
+        </div>
+
+        <!--Directions-text-box-->
+
+        <div class="text-box button-box">
+            <section id="recipe1">
+                <h6 style="font-weight: bold;">DIRECTIONS:</h6>
+                <p>Preheat the oven to 350°F (175°C) and grease a 9x13-inch baking dish. Mix flour, baking powder, and salt in a bowl. Cream the butter and sugar, then add eggs and vanilla. Gradually add the dry mix to the wet mix and spread the batter in the baking dish. 
+                <p>Bake for 30-35 minutes and let it cool slightly. Poke holes in the cake and pour the three milk mixture over it. </p>
+                <p>Refrigerate for at least 2 hours. Top with whipped cream and garnish if desired.</p>
+            </section>
+        </div>
+        <br>
+
+    </body>
+
+    <!--Javascript-->
+
+    <script>
+        function openEmailClient() {
+            var subject = "Shopping List For Recipe #5: Tres Leches";
+            var body = "Ingredients List: \n\n" 
+            "- 1 cup all-purpose flour\n" +  
+            "- 1 1/2 tsp baking powder\n" +  
+            "- 1/4 tsp salt\n" +   
+            "- 1/2 cup unsalted butter\n" +  
+            "- 1 cup granulated sugar\n" +   
+            "- 5 large eggs\n" +   
+            "- 1 tsp vanilla extract\n" +   
+            "- 12 oz evaporated milk\n" +  
+            "- 14 oz sweetened condensed milk\n" +   
+            "- 1 cup whole milk\n" +  
+            "- 2 cups whipped cream\n" +  
+            "- Ground cinnamon or fresh fruit for garnish (optional)";   
+
+
+            var mailtoLink = "mailto:?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+            window.location.href = mailtoLink;
+        }
+        document.getElementById("contactButton").addEventListener("click", openEmailClient);
+    </script>
+
+</html>
