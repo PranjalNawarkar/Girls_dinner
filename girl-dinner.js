@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 //email shopping list
 function openEmailClient() {
             var subject = "Shopping List For Recipe #1: Adult Lunchable";
@@ -16,8 +15,7 @@ function openEmailClient() {
         }
         document.getElementById("contactButton").addEventListener("click", openEmailClient);
 
-=======
->>>>>>> Stashed changes
+        
 //image carousel
     const myCarousel = document.getElementById('test-carousel');
     const carousel = new bootstrap.Carousel(myCarousel, {
