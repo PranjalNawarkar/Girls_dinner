@@ -9,7 +9,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>Girl Dinner - Recipe 3: Hummus</title>
+        <title>Girl Dessert Dinner - Recipe 5: Tres Leches</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <script src="https://kit.fontawesome.com/c92bfa29e2.js" crossorigin="anonymous"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -56,28 +56,31 @@
         <!--recipe-image-and-main-script-and-shopping-button-->
 
         <div class="flexbox-container" style="padding-top: 50px;">
-            
             <div class="image-container">
-                <img src="images/Food-pic-3-app.jpg" alt="Hummus">
+                <img src="images/Food-pic-5-dessert.jpg" alt="Tres Leches">
             </div>
             
             <div class="text-box button-box">
                 <span style="align-items: center;">
                     <span style="text-align: center;">
                         <br>
-                        <h2>Appetizer: Hummus</h2>
-                        <h6>Add garlic... to taste</h6>
+                        <h2>Tres Leches</h2>
+                        <h6>Three's a Party!</h6>
                         <br>
                     </span> 
                     <h6 style="font-weight: bold;">INGREDIENTS:</h6>
-                    <li>15 ounce can chickpeas, drained and rinsed</li>  
-                    <li>⅓ cup tahini</li>   
-                    <li>1½  tablespoons extra-virgin olive oil</li>  
-                    <li>1 tablespoon lemon juice, to taste</li>
-                    <li>¼ teaspoon garlic powder, to taste</li>
-                    <li>½ teaspoon sea salt</li>
-                    <li>¼ cup water, or as needed to blend</li>
-                    <li>Veggies and/or warm pita bread, for serving</li>  
+                    <li>1 cup all-purpose flour</li> 
+                    <li>1 1/2 tsp baking powder</li> 
+                    <li>1/4 tsp salt</li>  
+                    <li>1/2 cup unsalted butter</li>  
+                    <li>1 cup granulated sugar</li>  
+                    <li>5 large eggs</li>  
+                    <li>1 tsp vanilla extract</li>  
+                    <li>12 oz evaporated milk</li> 
+                    <li>14 oz sweetened condensed milk</li> 
+                    <li>1 cup whole milk</li> 
+                    <li>2 cups whipped cream</li> 
+                    <li>Ground cinnamon or fresh fruit for garnish (optional)</li>   
                     <br>
                     <button id="contactButton">Get The Shopping List</button>   
                 </span>
@@ -89,8 +92,9 @@
         <div class="text-box button-box">
             <section id="recipe1">
                 <h6 style="font-weight: bold;">DIRECTIONS:</h6>
-                <p>In a blender, place the chickpeas, tahini, olive oil, lemon juice, garlic powder, and salt. Use the blender baton to blend until very smooth, adding water as needed to blend, and/or to reach your desired consistency.</p>
-                <p>Transfer to a serving plate and serve with warm pita and veggies.</p>
+                <p>Preheat the oven to 350°F (175°C) and grease a 9x13-inch baking dish. Mix flour, baking powder, and salt in a bowl. Cream the butter and sugar, then add eggs and vanilla. Gradually add the dry mix to the wet mix and spread the batter in the baking dish. 
+                <p>Bake for 30-35 minutes and let it cool slightly. Poke holes in the cake and pour the three milk mixture over it. </p>
+                <p>Refrigerate for at least 2 hours. Top with whipped cream and garnish if desired.</p>
             </section>
         </div>
         <br>
@@ -101,15 +105,22 @@
 
     <script>
         function openEmailClient() {
-            var subject = "Shopping List For Recipe #3: Hummus";
-            var body = "Ingredients List: \n\n" +
-                "- 1 (one) 15 ounce can chickpeas, drained and rinsed\n" +
-                "- ⅓ cup tahini\n" +
-                "- extra-virgin olive oil\n" +
-                "- lemon juice\n" +
-                "- garlic powder\n" +
-                "- sea salt\n" +
-                "- Veggies and/or warm pita bread, for serving";
+            var subject = "Shopping List For Recipe #5: Tres Leches";
+            var body = "Ingredients List: \n\n" 
+            "- 1 cup all-purpose flour\n" +  
+            "- 1 1/2 tsp baking powder\n" +  
+            "- 1/4 tsp salt\n" +   
+            "- 1/2 cup unsalted butter\n" +  
+            "- 1 cup granulated sugar\n" +   
+            "- 5 large eggs\n" +   
+            "- 1 tsp vanilla extract\n" +   
+            "- 12 oz evaporated milk\n" +  
+            "- 14 oz sweetened condensed milk\n" +   
+            "- 1 cup whole milk\n" +  
+            "- 2 cups whipped cream\n" +  
+            "- Ground cinnamon or fresh fruit for garnish (optional)";   
+
+
             var mailtoLink = "mailto:?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
             window.location.href = mailtoLink;
         }
