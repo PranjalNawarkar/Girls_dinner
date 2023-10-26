@@ -23,10 +23,10 @@ body {
 
 .text-box {
   background-color: #CF85A6;
-  border-radius: 0;
+  border-radius: 15px;
   padding: 20px;
   margin: 20px;
-  text-align: center;
+  text-align:left;
 }
   .text-box p {
       font-family: Tahoma, sans-serif;
@@ -79,19 +79,35 @@ justify-content: center;
 flex-wrap: wrap;
 }
 
-.image-container1 {
+.image-container {
 position: relative;
 justify-content: center;
+padding:10px;
 margin: 10px;
 width: 300px; 
 height: 300px; 
 }
 
-.image-container1 img {
+.image-container img {
 max-width: 100%;
+border-radius:10px;
 height: auto;
 box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.1);
 }
+
+.image-container1 {
+  position: relative;
+  justify-content: center;
+  margin: 10px;
+  width: 300px; 
+  height: 300px; 
+  }
+
+  .image-container1 img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.1);
+    }
 
 .image-container1:hover .overlay {
 opacity: .92;
