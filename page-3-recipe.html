@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Girl Dinner - Recipe 2: Adult Lunchable</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://kit.fontawesome.com/c92bfa29e2.js" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="girl-dinner.css">
+        <script src="girl-dinner.js"></script> 
+    </head>
+
+    <body class="body">
+
+        <!--navbar-->
+
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+
+            <div class="container-fluid">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="navbar-brand" href="homepage.html">Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-brand" href="page-2-recipe.html">Drink</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-brand" href="page-3-recipe.html">Appetizer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-brand" href="page-4-recipe.html">Snack</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-brand" href="page-5-recipe.html">Dessert</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-brand" href="page-6-recipe.html">More Dessert</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-brand" href="page-7-about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="b-example-divider"></div>
+
+        <!--recipe-image-and-main-script-and-shopping-button-->
+
+        <div class="flexbox-container" style="padding-top: 50px;">
+            <div class="image-container">
+                <img src="pictures/Food-pic-2-snack.jpg" alt="Adult Lunchable">
+            </div>
+            
+            <div class="text-box button-box">
+                <span style="align-items: center;">
+                    <span style="text-align: center;">
+                        <br>
+                        <h2>Snack: Adult Lunchable</h2>
+                        <h6>For when you want to eat with your fingers... like a grown up</h6>
+                        <br>
+                    </span> 
+                    <h6 style="font-weight: bold;">INGREDIENTS:</h6>
+                    <li>Fancy Cheeses, like gouda, manchego, brie, etc.</li>  
+                    <li>Meats, like proscuitto, salami, smoked meats, and some people even like tinned fish like sardines!</li>  
+                    <li>Dips, like hummus or spichach artichoke dip</li>  
+                    <li>Fruit, like sliced apples or strawberries</li>
+                    <li>Something Crunchy, like chips, pretzels, or nuts</li>   
+                    <li>Pickles...or some other slightly vinegary item to add a little sour flavor to the mix</li>  
+                    <br>
+                    <!--<button id="contactButtonLunch">Get The Shopping List for Adult Lunchable</button>-->   
+                </span>
+            </div>
+        </div>
+
+        <!--Directions-text-box-->
+
+        <div class="text-box button-box">
+            <section id="recipe1">
+                <h6 style="font-weight: bold;">DIRECTIONS:</h6>
+                <p>This is an easy one... Arrange all your ingredients on a serving platter and enjoy!</p>
+                <br>
+                <p>The imporant thing to remember about Girl Dinner is that it's whatever you want it to be!</p>
+            </section>
+        </div>
+        <br>
+
+        <button id="contactButtonLunch">Get The Shopping List for Adult Lunchable</button>
+
+
+        <script>
+            //email shopping list lunchable
+            function openEmailClientLunch() {
+            var subject = "Shopping List For Recipe: Adult Lunchable";
+            var body = "Ingredients List: \n\n" +
+             "- Fancy Cheeses, like gouda, manchego, brie, etc.\n" +
+             "- Meats, like prosciutto, salami, smoked meats, and some people even like tinned fish like sardines! \n" +
+             "- Dips, like hummus or spinach artichoke dip\n" +
+             "- Fruit, like sliced apples or strawberries\n" +
+             "- Something Crunchy, like chips, pretzels, or nuts\n" +
+             "- Pickles...or some other slightly vinegary item to add a little sour flavor to the mix \n" +
+             "- Whatever else your heart desires \n\n" +
+             "- The important thing to remember about Girl Dinner is that it's whatever you want it to be!";
+            var mailtoLink = "mailto:?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+            window.location.href = mailtoLink;
+            }
+            document.getElementById("contactButtonLunch").addEventListener("click", openEmailClientLunch);
+        </script>
+
+
+
+
+
+
+
+    </body>
+
+
+</html>
